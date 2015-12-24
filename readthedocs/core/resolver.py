@@ -27,13 +27,10 @@ All possible URL's::
 """
 
 import re
-import logging
 
 from django.conf import settings
 
 from readthedocs.projects.constants import PRIVATE, PUBLIC
-
-log = logging.getLogger(__name__)
 
 
 def _get_private(project, version_slug):
